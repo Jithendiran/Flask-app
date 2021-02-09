@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 def data():
     
-    client = MongoClient('mongodb+srv://Linked:LINKEDIN@cluster0.clz14.mongodb.net/<dbname>?retryWrites=true&w=majority')
+    client = MongoClient('Your Mongodb File') #link of atlas
     db = client['LinkedIn']
     doc = db['reco']
     l = list(doc.find({}))
@@ -10,7 +10,7 @@ def data():
     return l
 
 def search(pn , rn):
-    client = MongoClient('mongodb+srv://Linked:LINKEDIN@cluster0.clz14.mongodb.net/<dbname>?retryWrites=true&w=majority')
+    client = MongoClient('Your Mongodb File')#link of atlas
     db = client['LinkedIn']
     doc = db['reco']
     
